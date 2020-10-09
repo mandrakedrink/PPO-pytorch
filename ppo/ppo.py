@@ -9,8 +9,8 @@ from IPython.display import clear_output
 import pandas as pd
 import numpy as np
 
-from models import ContinuousActor, DiscreteActor, Critic, init_weights
-from utils import get_gae, trajectories_data_generator
+from .models import ContinuousActor, DiscreteActor, Critic, init_weights
+from .utils import get_gae, trajectories_data_generator
 
 class Memory:
     """Storing the memory of the trajectory (s, a, r ...)."""
